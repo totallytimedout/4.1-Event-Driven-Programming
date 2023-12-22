@@ -1,0 +1,64 @@
+@keyframes sideToSide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4646461f;
+}
+
+.inserted {
+    background-color: cadetblue;
+    border-color: gold;
+    border-radius: 100%;
+    color: rgb(37, 35, 29);
+    border-width: 2px;
+    min-width: 40px;
+    width: min-content;
+    max-width: max-content;
+    position: relative;
+
+}
+
+
+/* 5 second duration */
+/* smooth animation that is proportionally modified  */
+#memeImage {
+    animation: 5s linear infinite alternate-reverse sideToSide;
+    animation-play-state: paused;
+    display: block;
+    box-sizing: border-box;
+    /* float: inline-start; */
+    position: absolute
+}
+
+s #meme-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+/* .running {
+    animation-play-state: running;
+}
+
+.paused {
+    animation-play-state: paused;
+} */
+
+button.inserted:disabled {
+    border-color: rgb(43, 39, 39);
+    color: rgb(82, 81, 81);
+    border-width: 1px;
+    border-style: groove;
+}
